@@ -1,34 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Asnowco LLC</title>
+  <link rel="icon" href="asnowcoflake.png" type="image/x-icon">
   <style>
+    /* Reset & base */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { height: 100%; }
     body {
-      margin: 0;
-      padding: 0;
-      background-color: #0f0f0f;
-      color: white;
-      font-family: sans-serif;
+      background: #000;
+      color: #fff;
+      font-family: 'Helvetica Neue', sans-serif;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 100vh;
+      text-align: center;
     }
-    img {
-      max-width: 250px;
-      margin-bottom: 20px;
+
+    /* Logo */
+    .logo {
+      max-width: 80vw;
+      width: auto;
+      height: auto;
     }
-    a {
-      color: #00b7ff;
-      font-size: 1.2rem;
+
+    /* Slogan */
+    .slogan {
+      margin-top: 2rem;
+      font-size: 1.5rem;
+      line-height: 1.4;
+      max-width: 90vw;
+    }
+
+    /* Footer */
+    footer {
+      position: absolute;
+      bottom: 1.5rem;
+      font-size: 0.9rem;
+      color: #aaa;
+      display: flex;
+      align-items: center;
+    }
+    .mini-logo {
+      width: 24px;
+      height: auto;
+      margin-right: 0.5rem;
     }
   </style>
 </head>
 <body>
-  <img src="logo.png" alt="Asnowco Logo" />
-  <p>Contact: <a href="mailto:contact@asnowco.com">contact@asnowco.com</a></p>
+  <!-- Main logo -->
+  <img src="asnowcologo.png" alt="Asnowco LLC Logo" class="logo">
+
+  <!-- Slogan -->
+  <p class="slogan">
+    Moving forward to a better tomorrow<br>
+    and creating a stronger, more just society.
+  </p>
+
+  <!-- Footer with mini-logo -->
+  <footer>
+    <img src="asnowcoflake.png" alt="" class="mini-logo">
+    Asnowco LLC — Limited Liability Corporation
+  </footer>
 </body>
 </html>

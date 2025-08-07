@@ -19,7 +19,9 @@
       justify-content: center;
       text-align: center;
       padding-bottom: 3rem;
-      margin: 0;  
+      margin: 0;
+      padding: 0;
+      height: 100%;
     }
 
     /* Logo */
@@ -99,13 +101,27 @@
   color: #fff;           /* match your site text color */
   font-weight: bold;
 }
+    
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.hero .logo {
+  max-width: 100%;
+  max-height: 100%;
+}
 
   </style>
 </head>
 <body>
   <!-- Main logo -->
-  <img src="asnowcologo.png" alt="Asnowco LLC Logo" class="logo">
-
+  <div class="hero">
+    <img src="asnowcologo.png" alt="Asnowco Logo" class="logo">
+  </div>
   <!-- Slogan -->
   <p class="slogan">
     Moving forward to a better tomorrow<br>

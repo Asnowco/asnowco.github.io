@@ -66,6 +66,30 @@
       height: auto;
       margin-right: 0.5rem;
     }
+
+    .partners-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  width: 90vw;
+  max-width: 800px;
+}
+.partner-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.partner-block img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+.partner-name {
+  font-size: 0.9rem;
+  color: #ddd;
+}
+
   </style>
 </head>
 <body>
@@ -82,6 +106,19 @@
   <p class="contact">
     Email us at <a href="mailto:board.asnowco@gmail.com">board.asnowco@gmail.com</a>
   </p>
+
+  <div class="partners-section">
+  <div class="partner-block">
+    <img src="partner1.png" alt="Partner 1 Logo">
+    <div class="partner-name">Partner One</div>
+  </div>
+  <div class="partner-block">
+    <img src="partner2.png" alt="Partner 2 Logo">
+    <div class="partner-name">Partner Two</div>
+  </div>
+  <!-- repeat a .partner-block for each partner -->
+</div>
+
 
   <!-- Footer with mini-logo -->
   <footer>

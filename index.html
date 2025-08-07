@@ -19,14 +19,16 @@
       justify-content: center;
       text-align: center;
       padding-bottom: 3rem;
+      margin: 0;  
     }
 
     /* Logo */
-    .logo {
-      max-width: 80vw;
-      width: auto;
-      height: auto;
-    }
+   .logo {
+  width: 100vw;           /* full viewport width */
+  height: 100vh;          /* full viewport height */
+  object-fit: contain;    /* scale the image to fit inside, preserving aspect ratio */
+  display: block;         /* remove inline spacing */
+}
 
     /* Slogan */
     .slogan {

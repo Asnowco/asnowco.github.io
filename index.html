@@ -4,298 +4,135 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Asnowco LLC | Wholesale Real Estate</title>
-
-  <!-- Put a file named favicon.ico in your project root -->
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
-
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    html, body { height: 100%; }
-    body {
-      background: #000;
-      color: #fff;
-      font-family: "Helvetica Neue", Arial, sans-serif;
-      text-align: center;
-    }
-    a { color: #0af; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    /* Hero */
-    .hero {
-      width: 100%;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 1rem;
-    }
-    .hero img {
-      max-width: 100%;
-      max-height: 100%;
-      object-fit: contain;
-      display: block;
-    }
-
-    /* Layout */
-    main {
-      padding: 2rem 1rem 3rem;
-      max-width: 980px;
-      margin: 0 auto;
-    }
-
-    .headline {
-      font-size: 1.9rem;
-      font-weight: 700;
-      margin-top: 0.5rem;
-    }
-
-    .slogan {
-      margin: 1rem auto 1.5rem;
-      font-style: italic;
-      font-size: 1.05rem;
-      line-height: 1.45;
-      color: #ddd;
-      max-width: 46rem;
-    }
-
-    .contact {
-      font-size: 1rem;
-      margin: 0.75rem 0 2rem;
-    }
-
-    /* Info blocks */
-    .blocks {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 1rem;
-      margin: 1.5rem auto 2.25rem;
-    }
-    .block {
-      border: 1px solid rgba(255,255,255,0.12);
-      border-radius: 14px;
-      padding: 1.25rem;
-      text-align: left;
-      background: rgba(255,255,255,0.03);
-    }
-    .block h3 {
-      font-size: 1.05rem;
-      margin-bottom: 0.5rem;
-    }
-    .block p {
-      color: #d6d6d6;
-      line-height: 1.55;
-      font-size: 0.98rem;
-    }
-
-    /* Process */
-    .section-title {
-      font-size: 1.6rem;
-      margin: 2.25rem 0 1rem;
-      font-weight: 700;
-    }
-    .steps {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 1rem;
-      margin: 1rem auto 2.25rem;
-    }
-    .step {
-      border: 1px solid rgba(255,255,255,0.12);
-      border-radius: 14px;
-      padding: 1.1rem;
-      background: rgba(255,255,255,0.03);
-      text-align: left;
-    }
-    .step .num {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 34px;
-      height: 34px;
-      border-radius: 999px;
-      border: 1px solid rgba(255,255,255,0.18);
-      margin-bottom: 0.7rem;
-      font-weight: 700;
-    }
-    .step h4 {
-      font-size: 1.05rem;
-      margin-bottom: 0.35rem;
-    }
-    .step p {
-      color: #d6d6d6;
-      line-height: 1.55;
-      font-size: 0.98rem;
-    }
-
-    /* Partners */
-    .partners-header {
-      font-size: 1.8rem;
-      margin: 2.25rem 0 1rem;
-      font-weight: 700;
-    }
-    .partners {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 1.25rem;
-      margin: 0 auto 2.5rem;
-      max-width: 1100px;
-    }
-    .partner {
-      border: 1px solid rgba(255,255,255,0.12);
-      border-radius: 14px;
-      padding: 1rem;
-      background: rgba(255,255,255,0.03);
-      text-align: left;
-    }
-    .partner-media {
-      width: 100%;
-      aspect-ratio: 1 / 1;
-      border-radius: 12px;
-      border: 1px solid rgba(255,255,255,0.10);
-      background: rgba(0,0,0,0.35);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-      margin-bottom: 0.75rem;
-    }
-    .partner-media img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      display: block;
-      padding: 10%;
-    }
-    .partner-name {
-      font-size: 1rem;
-      font-weight: 700;
-      margin-bottom: 0.35rem;
-    }
-    .partner-desc {
-      color: #d6d6d6;
-      font-size: 0.95rem;
-      line-height: 1.5;
-    }
-
-    /* Footer */
-    footer {
-      padding: 1.25rem 1rem 2rem;
-      color: #8a8a8a;
-      font-size: 0.9rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.5rem;
-    }
-    .mini-logo { width: 20px; height: auto; }
-
-    /* Mobile tweaks */
-    @media (max-width: 420px) {
-      .headline { font-size: 1.55rem; }
-      .slogan { font-size: 1rem; }
-      .partners { grid-template-columns: 1fr; }
-    }
-  </style>
+  <link rel="stylesheet" href="assets/styles.css" />
 </head>
-
 <body>
-  <!-- HERO LOGO -->
-  <div class="hero">
-    <!-- Put your main logo file in the root as asnowcologo.png -->
-    <img src="asnowcologo.png" alt="Asnowco LLC Logo" />
-  </div>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="asnowcoflake.png" alt="" />
+        <div class="name">Asnowco LLC</div>
+      </a>
 
-  <main>
-    <div class="headline">Wholesale Real Estate</div>
+      <nav class="nav" aria-label="Primary">
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="vision.html">Vision</a>
+        <a href="deals.html">Completed Deals</a>
+        <a href="contact.html">Contact</a>
+      </nav>
 
-    <p class="slogan">
-      Sourcing off market opportunities and moving deals forward with speed, clarity, and outcomes that make sense for both sides.
-    </p>
-
-    <p class="contact">
-      Email us at <a href="mailto:board.asnowco@gmail.com">board.asnowco@gmail.com</a>
-    </p>
-
-    <div class="blocks">
-      <div class="block">
-        <h3>For Sellers</h3>
-        <p>
-          If you need a clean exit, we focus on simple terms, quick timelines, and clear communication.
-          We can evaluate most properties fast and coordinate the next steps without chaos.
-        </p>
-      </div>
-      <div class="block">
-        <h3>For Buyers</h3>
-        <p>
-          We bring underwritten opportunities with direct access to the deal details.
-          If you are a cash buyer or have reliable funding, reach out to join our distribution list.
-        </p>
-      </div>
-      <div class="block">
-        <h3>Primary Market</h3>
-        <p>
-          Washington State. If you have a deal or a buyer in nearby markets, email us and we will confirm coverage.
-        </p>
+      <div class="actions">
+        <a class="btn primary" href="contact.html">Submit a Lead</a>
+        <button class="menu-btn" data-menu-button aria-expanded="false" aria-label="Open menu">☰</button>
       </div>
     </div>
 
-    <div class="section-title">How It Works</div>
-    <div class="steps">
-      <div class="step">
-        <div class="num">1</div>
-        <h4>Submit a lead</h4>
-        <p>Send the address, basic condition notes, and your timeline. Photos help.</p>
-      </div>
-      <div class="step">
-        <div class="num">2</div>
-        <h4>Underwrite</h4>
-        <p>We run comps, repair assumptions, and confirm an offer structure that can close.</p>
-      </div>
-      <div class="step">
-        <div class="num">3</div>
-        <h4>Contract and assign</h4>
-        <p>We execute the agreement and coordinate with title for a clean close.</p>
-      </div>
-      <div class="step">
-        <div class="num">4</div>
-        <h4>Close</h4>
-        <p>Buyer closes through escrow. Everyone gets paid and the file is done.</p>
+    <div class="menu" data-menu>
+      <div class="container menu-inner">
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="vision.html">Vision</a>
+        <a href="deals.html">Completed Deals</a>
+        <a href="contact.html">Contact</a>
       </div>
     </div>
+  </header>
 
-    <h2 class="partners-header">Partners</h2>
-    <div class="partners">
-      <!-- Replace partner1.png partner2.png with your actual logo files -->
-      <div class="partner">
-        <div class="partner-media">
-          <img src="partner1.png" alt="Partner 1" />
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="kicker">Wholesale Real Estate</div>
+        <div class="h1">Off market acquisitions, clean exits, and fast closings across Washington.</div>
+        <div class="sub">
+          Asnowco sources discounted properties, structures straightforward terms, and moves deals through title with speed and clarity.
+          If you are a seller looking for a simple exit or a buyer looking for opportunities, we keep the process tight.
         </div>
-        <div class="partner-name">Buyer Network</div>
-        <div class="partner-desc">Local and regional cash buyers and operators.</div>
+
+        <div class="hero-cta">
+          <a class="btn primary" href="contact.html">Email: board.asnowco@gmail.com</a>
+          <a class="btn" href="deals.html">View Completed Deals</a>
+        </div>
+
+        <div class="pills" aria-label="Highlights">
+          <span class="pill">Probate</span>
+          <span class="pill">Distressed</span>
+          <span class="pill">Vacant</span>
+          <span class="pill">Inherited</span>
+          <span class="pill">Rental Turnover</span>
+        </div>
       </div>
 
-      <div class="partner">
-        <div class="partner-media">
-          <img src="partner2.png" alt="Partner 2" />
-        </div>
-        <div class="partner-name">Title and Escrow</div>
-        <div class="partner-desc">Fast title work and clean closings.</div>
-      </div>
-
-      <div class="partner">
-        <div class="partner-media">
-          <img src="partner3.png" alt="Partner 3" />
-        </div>
-        <div class="partner-name">Trades and Renovation</div>
-        <div class="partner-desc">Reliable bids and execution when needed.</div>
+      <div class="hero-card">
+        <img class="logo-big" src="asnowcologo.png" alt="Asnowco logo" />
       </div>
     </div>
-  </main>
+  </section>
 
-  <footer>
-    <!-- Put your mini logo file in the root as asnowcoflake.png -->
-    <img src="asnowcoflake.png" alt="" class="mini-logo" />
-    Asnowco LLC, a Limited Liability Company
+  <section class="section">
+    <div class="container">
+      <div class="section-title">What We Do</div>
+      <div class="section-lead">
+        We operate as a wholesaler: we identify value, contract with the seller, and assign to end buyers through a transparent closing process.
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <h3>For Sellers</h3>
+          <p>Clear terms, predictable timelines, and communication that does not disappear after the first call.</p>
+        </div>
+        <div class="card">
+          <h3>For Buyers</h3>
+          <p>Deal flow with basic underwriting, photos, and an acquisition narrative so you can decide quickly.</p>
+        </div>
+        <div class="card">
+          <h3>For Partners</h3>
+          <p>We coordinate with title, agents, and vendors to keep files clean and reduce friction to close.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split">
+      <div class="card">
+        <h3>Our Process</h3>
+        <p>Simple pipeline designed for speed and accuracy.</p>
+        <ul class="list">
+          <li>Lead intake and basic property facts</li>
+          <li>Comps and repair scope assumption</li>
+          <li>Offer structure and contract execution</li>
+          <li>Title open, buyer match, assignment</li>
+          <li>Close through escrow</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Coverage</h3>
+        <p>Primary focus is Washington State. For adjacent markets, email us with the address and we will confirm fit.</p>
+        <div class="pills">
+          <span class="pill">King County</span>
+          <span class="pill">Pierce County</span>
+          <span class="pill">Snohomish County</span>
+          <span class="pill">Spokane Area</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="asnowcoflake.png" alt="" />
+        <div>Asnowco LLC, a Limited Liability Company</div>
+      </div>
+      <div>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
   </footer>
+
+  <script src="assets/site.js"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 (function () {
   const btn = document.querySelector('[data-menu-button]');
-  const menu = document.querySelector('[data-menu]');
+  const menu = document.querySelector('[data-mobile-menu]');
   if (!btn || !menu) return;
 
   btn.addEventListener('click', () => {

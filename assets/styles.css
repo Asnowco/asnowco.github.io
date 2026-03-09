@@ -330,3 +330,13 @@ textarea{min-height:130px;resize:vertical}
   .menu-btn{display:inline-flex;align-items:center;justify-content:center}
   .menu.open{display:block}
 }
+
+.team-photo-img{
+  width:100%;
+  aspect-ratio:1 / 1;
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,.14);
+  object-fit:cover;
+  display:block;
+  margin-bottom:.9rem;
+}

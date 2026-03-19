@@ -13,11 +13,16 @@ A modern static site redesign for Asnowco using:
 - `js/main.js` Interactions + publications rendering
 
 ## Add your provided images
-Copy your image files into `assets/` using these filenames:
-- `assets/400pxflake.png`
-- `assets/nobgflake.png`
-- `assets/banner.png`
-- `assets/asnowcologo.png`
+Copy your image files into the repo root (same folder as `index.html`) using these filenames:
+- `400pxflake.png`
+- `nobgflake.png`
+- `banner.png`
+- `asnowcologo.png`
+
+Co-founder headshots (repo root):
+- `ConnorGannon.jpeg`
+- `ChrisPachuilo.jpeg`
+- `CarsonWais.jpeg`
 
 ## Run locally
 Open `index.html` directly in a browser, or use any static server.

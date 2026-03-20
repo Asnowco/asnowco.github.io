@@ -153,7 +153,20 @@
         'We keep the process direct and documentation-first.'
       ]
     },
-    
+    {
+      slug: 'ai-automation-without-chaos',
+      title: 'AI Automation Without Chaos',
+      date: '2026-02-04',
+      category: 'Operations',
+      excerpt: 'Practical automation is about stable workflows. Start small, measure impact, and protect reputation by default.',
+      image: 'https://images.unsplash.com/photo-1526378722484-bd91ca387e72?auto=format&fit=crop&w=2000&q=70',
+      content: [
+        'Most automation projects fail because the workflow is unclear. Pick one process, define the input, define the output, and enforce the rules.',
+        `## Starting point
+Automate a single repetitive step: triage, drafting, or summarization. Keep humans in the loop until accuracy is consistent.`,
+        'Reputation protection starts with consistency: clear messaging, good hygiene, and fast response.'
+      ]
+    }
   ];
 
   const formatDate = (iso) => {
